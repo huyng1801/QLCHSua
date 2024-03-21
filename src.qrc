@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>icon/pay.png</file>
+    <file>icon/cart.png</file>
+    <file>icon/addproduct.png</file>
+    <file>icon/editproduct.png</file>
+    <file>icon/removeproduct.png</file>
+    <file>icon/addemployeeimage.png</file>
+    <file>icon/saveemployee.png</file>
+    <file>icon/billing.png</file>
+    <file>icon/logout.png</file>
+    <file>icon/product.png</file>
+    <file>icon/statistics.png</file>
+  </qresource>
+</RCC>

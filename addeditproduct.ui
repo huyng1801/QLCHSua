@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddEditProduct</class>
+ <widget class="QWidget" name="AddEditProduct">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLineEdit{
+border-radius: 15px;
+font: 11pt &quot;MS Shell Dlg 2&quot;;
+padding-left: 10px;
+padding-right: 10px;
+border: 1px solid rgb(40, 42, 48);
+height: 30px;
+}
+QLabel{
+font: 11pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 100px;
+}
+QWidget#AddEditProduct{
+background-color: rgb(242, 242, 248);
+}</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>80</y>
+     <width>181</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="QVBLQL">
+    <property name="spacing">
+     <number>50</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="QLProductId">
+      <property name="text">
+       <string>Mã sữa:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="QLProductName">
+      <property name="text">
+       <string>Tên sữa:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="QLProductProducer">
+      <property name="text">
+       <string>Tên công ty sản xuất:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="QLProductCS">
+      <property name="text">
+       <string>Quy cách hàng hóa</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="QLProductPrice">
+      <property name="text">
+       <string>Đơn giá</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="QLProductNumber">
+      <property name="text">
+       <string>Số lượng:</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>80</y>
+     <width>371</width>
+     <height>444</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="QVBLQLE">
+    <property name="spacing">
+     <number>50</number>
+    </property>
+    <item>
+     <widget class="QLineEdit" name="QLEProductId"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="QLEProductName"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="QLEProductProducer"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="QLEProductCS"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="QLEProductPrice"/>
+    </item>
+    <item>
+     <widget class="QSpinBox" name="QSBProductNumber">
+      <property name="styleSheet">
+       <string notr="true">border-top-left-radius: 15px;
+border-bottom-left-radius: 15px;
+font: 11pt &quot;MS Shell Dlg 2&quot;;
+padding-left: 10px;
+padding-right: 10px;
+border: 1px solid rgb(40, 42, 48);
+height: 30px;</string>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>1000</number>
+      </property>
+      <property name="value">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="QLProduct">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>30</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Sản phẩm&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="QLProductImage">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>80</y>
+     <width>300</width>
+     <height>300</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Ảnh&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="openExternalLinks">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="QPBUpLoadProductImage">
+   <property name="geometry">
+    <rect>
+     <x>725</x>
+     <y>420</y>
+     <width>150</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>110</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::TabFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">height: 40px;
+border-radius: 20px;
+background-color: rgb(139, 233, 253);
+font: 11pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Tải ảnh lên</string>
+   </property>
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/newPrefix/icon/addemployeeimage.png</normaloff>:/newPrefix/icon/addemployeeimage.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>25</width>
+     <height>25</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="QPBSaveProduct">
+   <property name="geometry">
+    <rect>
+     <x>725</x>
+     <y>480</y>
+     <width>150</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>110</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::TabFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">height: 40px;
+border-radius: 20px;
+background-color: rgb(80, 250, 123);
+font: 11pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Lưu</string>
+   </property>
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/newPrefix/icon/saveemployee.png</normaloff>:/newPrefix/icon/saveemployee.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="src.qrc"/>
+ </resources>
+ <connections/>
+</ui>
